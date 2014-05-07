@@ -2,7 +2,7 @@
 #import <Foundation/Foundation.h>
 #import <Cordova/CDVPlugin.h>
 
-@interface CDVBeaconManger : CDVPlugin
+@interface CDVBeaconManager : CDVPlugin
 
 - (void) startMonitoring:(CDVInvokedUrlCommand*)command;
 

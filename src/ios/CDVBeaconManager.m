@@ -1,7 +1,7 @@
-#import "CDVBeaconManger.h"
+#import "CDVBeaconManager.h"
 #import "N_Beacon.h"
 
-@implementation CDVBeaconManger
+@implementation CDVBeaconManager
 
 - (CDVPlugin*) initWithWebView:(UIWebView*)theWebView
 {
