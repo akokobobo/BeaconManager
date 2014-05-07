@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="is.narrative.cordova.plugin.beaconmanger"
+    id="is.narrative.cordova.plugin.beaconmanager"
     version="1.0.0">
 
-    <name>beaconmanger Plugin for Cordova iOS</name>
-    <description>This plugin allows your app access to beaconmanger</description>
+    <name>beaconmanager Plugin for Cordova iOS</name>
+    <description>This plugin allows your app access to beaconmanager</description>
     <license>Apache 2.0</license>
-    <keywords>beaconmanger</keywords>
+    <keywords>beaconmanager</keywords>
 
     <engines>
         <engine name="cordova" version=">=2.2.0" />
     </engines>
 
-    <asset src="www/beaconManger.js" target="plugins/beaconManger.js" />
+    <asset src="www/beaconManager.js" target="plugins/beaconManager.js" />
 
-	<js-module src="www/beaconManger.js" name="beaconManger">
-    	<clobbers target="window.BeaconManger" />
+	<js-module src="www/beaconManager.js" name="beaconManager">
+    	<clobbers target="window.BeaconManager" />
 	</js-module>
 
     <!-- ios -->
     <platform name="ios">
         <!-- feature tag in config.xml -->
         <config-file target="config.xml" parent="/widget">
-          <feature name="BeaconManger">
-            <param name="ios-package" value="CDVBeaconManger"/>
+          <feature name="BeaconManager">
+            <param name="ios-package" value="CDVBeaconManager"/>
           </feature>
         </config-file>
 
-        <header-file src="src/ios/CDVBeaconManger.h" />
+        <header-file src="src/ios/CDVBeaconManager.h" />
 
-        <source-file src="src/ios/CDVBeaconManger.m"/>
+        <source-file src="src/ios/CDVBeaconManager.m"/>
 
     </platform>
 </plugin>

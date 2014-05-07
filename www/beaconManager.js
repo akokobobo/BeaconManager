@@ -21,12 +21,12 @@
 
 var exec = require('cordova/exec');
 
-var BeaconManger = function() {
+var BeaconManager = function() {
 	this.serviceName = "beaconManger";
 };
 
-BeaconManger.prototype.startMonitoring = function() {
-	exec(function(){}, function(){}, this.serviceName, "startMonitoring");
+BeaconManager.prototype.startMonitoring = function() {
+	exec(function(){}, function(){}, this.serviceName, "startMonitoring", []);
 };
 
-module.exports = BeaconManger;
+module.exports = BeaconManager;
