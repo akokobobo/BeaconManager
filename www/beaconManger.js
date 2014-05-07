@@ -29,4 +29,4 @@ BeaconManger.prototype.startMonitoring = function() {
 	exec(function(){}, function(){}, this.serviceName, "startMonitoring");
 };
 
-module.exports = beaconManger;
+module.exports = BeaconManger;
