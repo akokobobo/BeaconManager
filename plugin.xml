@@ -15,7 +15,7 @@
     <asset src="www/beaconManger.js" target="plugins/beaconManger.js" />
 
 	<js-module src="www/beaconManger.js" name="beaconManger">
-    	<clobbers target="window.beaconManger" />
+    	<clobbers target="window.BeaconManger" />
 	</js-module>
 
     <!-- ios -->
