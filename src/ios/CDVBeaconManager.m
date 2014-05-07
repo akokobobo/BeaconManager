@@ -5,7 +5,7 @@
 
 - (CDVPlugin*) initWithWebView:(UIWebView*)theWebView
 {
-    self = (CDVBeaconManger*)[super initWithWebView:(UIWebView*)theWebView];
+    self = (CDVBeaconManager*)[super initWithWebView:(UIWebView*)theWebView];
     if (self) {
     // initialization here
     }
