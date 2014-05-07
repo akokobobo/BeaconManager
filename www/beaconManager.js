@@ -22,7 +22,7 @@
 var exec = require('cordova/exec');
 
 var BeaconManager = function() {
-	this.serviceName = "beaconManger";
+	this.serviceName = "beaconManager";
 };
 
 BeaconManager.prototype.startMonitoring = function() {
