@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="is.narrative.cordova.plugin.beaconmanger"
+    version="1.0.0">
+
+    <name>beaconmanger Plugin for Cordova iOS</name>
+    <description>This plugin allows your app access to beaconmanger</description>
+    <license>Apache 2.0</license>
+    <keywords>beaconmanger</keywords>
+
+    <engines>
+        <engine name="cordova" version=">=2.2.0" />
+    </engines>
+
+    <asset src="www/beaconManger.js" target="plugins/beaconManger.js" />
+
+	<js-module src="www/beaconManger.js" name="beaconManger">
+    	<clobbers target="window.beaconManger" />
+	</js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <!-- feature tag in config.xml -->
+        <config-file target="config.xml" parent="/widget">
+          <feature name="BeaconManger">
+            <param name="ios-package" value="CDVBeaconManger"/>
+          </feature>
+        </config-file>
+
+        <header-file src="src/ios/CDVBeaconManger.h" />
+
+        <source-file src="src/ios/CDVBeaconManger.m"/>
+
+    </platform>
+</plugin>
