@@ -27,7 +27,7 @@
         NSDictionary *message = @{
                                   @"uuid": current.proximityUUID.UUIDString,
                                   @"major": current.major,
-                                  @"mior": current.minor
+                                  @"minor": current.minor
                                   };
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK
                                                       messageAsDictionary: message];
