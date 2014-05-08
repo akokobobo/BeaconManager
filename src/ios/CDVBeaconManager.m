@@ -32,7 +32,7 @@
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK
                                                       messageAsDictionary: message];
     } else {
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:NO];
     }
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
