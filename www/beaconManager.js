@@ -29,4 +29,8 @@ BeaconManager.prototype.startMonitoring = function() {
 	exec(function(){}, function(){}, this.serviceName, "startMonitoring", []);
 };
 
+BeaconManager.prototype.currentBeacon = function(success, fail) {
+  exec(success, fail, this.serviceName, "currentBeacon", []);
+};
+
 module.exports = BeaconManager;

@@ -19,6 +19,18 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
+- (void) currentBeacon:(CDVInvokedUrlCommand*)command
+{
+    CLBeacon *current = [[N_Beacon shared] current];
+    NSDictionary *message = @{
+                              @"uuid": current.proximityUUID.UUIDString,
+                              @"major": current.major,
+                              @"mior": current.minor
+                              };
+    CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK
+                                                  messageAsDictionary: message];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
 
 @end
 
