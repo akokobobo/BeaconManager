@@ -25,7 +25,7 @@
     CDVPluginResult* pluginResult;
     if (current) {
         NSDictionary *message = @{
-                                  @"proximityUUID": current.proximityUUID.UUIDString,
+                                  @"uuid": current.proximityUUID.UUIDString,
                                   @"major": current.major,
                                   @"minor": current.minor
                                   };
